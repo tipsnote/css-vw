@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>font-sizeの単位</title>
+</head>
+<body>
+
+<style>
+html{
+	font-size: 10px;
+}
+p{
+	margin: 0 0 10px;
+}
+.sample{
+	padding: 0 0 30px;
+}
+.txtWrap{
+	font-size: 20px;
+}
+.txt1{
+	font-size: 16px;
+}
+.txt2{
+	font-size: 1.6em;
+}
+.txt3{
+	font-size: 160%;
+}
+.txt4{
+	font-size: 1.6rem;
+}
+</style>
+
+<h1>html要素にはfont-size: 10px;を指定しています。</h1>
+
+<div class="sample">
+	<p class="txt1">このテキストは font-size: 16px; を指定しています。</p>
+</div>
+
+<div class="sample">
+	<p class="txt2">このテキストは font-size: 1.6em; を指定しています。</p>
+	<div class="txtWrap">
+		<p class="txt2">このテキストは font-size: 1.6em; を指定しています。（親要素にfont-size: 20px;を指定しています。）</p>
+	</div>
+</div>
+
+<div class="sample">
+	<p class="txt3">このテキストは font-size: 160%; を指定しています。</p>
+	<div class="txtWrap">
+		<p class="txt3">このテキストは font-size: 160%; を指定しています。（親要素にfont-size: 20px;を指定しています。）</p>
+	</div>
+</div>
+
+<div class="sample">
+	<p class="txt4">このテキストは font-size: 1.6rem; を指定しています。</p>
+	<div class="txtWrap">
+		<p class="txt4">このテキストは font-size: 1.6rem; を指定しています。（親要素にfont-size: 20px;を指定しています。）</p>
+	</div>
+</div>
+
+
+</body>
+</html>
